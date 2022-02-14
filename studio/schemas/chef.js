@@ -22,16 +22,11 @@ export default {
       type: 'array',
       of: [
         {
-          title: 'Bio',
-          name: 'bio',
-          type: 'string'
+          title: 'Block',
+          type: 'block',
+          styles: [{ title: 'Normal', value: 'normal' }],
+          lists: [],
         },
-        // {
-        //   title: 'Block',
-        //   type: 'block',
-        //   styles: [{ title: 'Normal', value: 'normal' }],
-        //   lists: [],
-        // },
       ],
     },
   ],
