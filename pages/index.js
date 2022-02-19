@@ -19,12 +19,12 @@ export default function Home({ recipes }) {
       </Head>
       <h1>Welcome to Evan's Kitchen 🍍</h1>
       <ul>
-        {recipes?.length > 0 &&
+         {recipes?.length > 0 &&
           recipes.map((recipe) => (
             <li>
               <Link href='/'>
                 <a>
-                  <img />
+                  <img src={urlFor(recipe.mainImage).url()} />
                   <span>{recipe.name}</span>
                 </a>
               </Link>
